@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InfoComponent } from '../info/info.component';
 
 @Component({
   selector: 'app-home',

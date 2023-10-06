@@ -1,18 +1,53 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title style="text-align: center;">
+      App Decente
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar class="ion-padding-horizontal">
-      <ion-icon size="large" name="apps-outline"></ion-icon>
-    </ion-toolbar>
-  </ion-header>
+  <ion-row class="ion-padding-top ion-margin-top" style="display: flex; justify-content: center;">
+    <ion-avatar style="width: 5rem; height: 5rem;">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+  </ion-row>
+  <ion-row class="ion-margin-bottom" style="display: flex; flex-direction: column; align-items: center;">
+    <h1>Nombre</h1>
+    <ion-text color="medium">
+      <p style="margin: 0;">+58414 555 5555</p>
+    </ion-text>
+  </ion-row>
 
-  <h1 class="ion-text-center" size="large">Título</h1>
-  
+  <app-info></app-info>
+
+  <ion-list lines="none">
+      <ion-item>
+        <ion-label>Compartir contacto</ion-label>
+        <ion-icon size="large" slot="end" name="share-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-toggle>
+          <ion-label>Silenciar</ion-label>
+        </ion-toggle>
+      </ion-item>
+      <ion-item class="ion-margin-top">
+        <ion-text color="danger">
+          <ion-label>Bloquear</ion-label>
+        </ion-text>
+        <ion-text color="danger" slot="end">
+          <ion-icon size="large" name="close-circle-outline"></ion-icon>
+        </ion-text>
+      </ion-item>
+      <ion-item>
+          <ion-text color="danger">
+            <ion-label>Reportar</ion-label>
+          </ion-text>
+          <ion-text color="danger" slot="end">
+            <ion-icon size="large" name="alert-circle-outline"></ion-icon>
+          </ion-text>
+      </ion-item>
+      
+  </ion-list>
+
 </ion-content>
